@@ -1,5 +1,5 @@
-import React, { Profiler } from "react";
-import './App.css';
+import React from "react";
+import "./App.css";
 import Sidebar from "./component/Sidebar";
 import Content from "./component/Content";
 import Profile from "./component/Profile";
