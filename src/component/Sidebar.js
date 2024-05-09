@@ -9,7 +9,7 @@ const Sidebar = () => {
                 <h2>DSSD</h2>
             </div>
             <div className="menu--list">
-                <a href="" className="item">
+                <a href="" className="item active">
                     <BiHome className="icon" />
                     DashBord
                 </a>
