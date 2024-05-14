@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  BiHome,
-  BiBookAlt,
-  BiMessage,
-  BiStats,
-  BiTask,
-  BiSolidReport,
-} from "react-icons/bi";
+import { BiHome, BiBookAlt } from "react-icons/bi";
 import "./Sidebar.css";
 const Sidebar = () => {
   return (
@@ -16,7 +9,7 @@ const Sidebar = () => {
         <h2>DSSD</h2>
       </div>
       <div className="menu--list">
-        <a href="" className="item active">
+        <a href="menu-list" className="item active">
           <BiHome className="icon" />
           DashBord
         </a>

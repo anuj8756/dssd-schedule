@@ -1,5 +1,5 @@
 import React from "react";
-import { BiNotification, BiSearch } from "react-icons/bi";
+import { BiSearch } from "react-icons/bi";
 
 const ContentHeader = () => {
   return (

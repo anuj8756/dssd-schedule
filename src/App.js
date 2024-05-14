@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Sidebar from "./component/Sidebar";
 import Content from "./component/Content";
@@ -9,7 +10,11 @@ function App() {
       <Sidebar />
       <div className="dashboard--content">
         <Content />
-        <Profile />
+        <BrowserRouter>
+          <Routes>
+            <Route path="profile" element={<Profile />}></Route>
+          </Routes>
+        </BrowserRouter>
       </div>
     </div>
   );

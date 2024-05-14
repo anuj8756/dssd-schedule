@@ -24,7 +24,7 @@ const courses = [
 ];
 const Profile = () => {
   return (
-    <div className="profile">
+    <div className="profile" id="profile">
       <ProfileHeader />
       <div className="user--profile">
         <div className="user--detail">

@@ -35,7 +35,7 @@
   background: #dde6ed;
   border-radius: 50%;
 }
-.teacher--detail h2 {
+.teacher--detail a {
   font-size: 20px;
 }
 

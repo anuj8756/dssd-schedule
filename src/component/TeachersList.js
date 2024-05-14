@@ -1,6 +1,6 @@
 import React from "react";
 import "./TeachersList.css";
-
+import { Link } from "react-router-dom";
 const teachers = [
   {
     image: "/images/images1.png",
@@ -10,22 +10,23 @@ const teachers = [
 
   {
     image: "/images/images1.png",
-    name: "Prof Deepak",
+    name: "Prof Suyash",
     duration: "8 hours",
   },
 
   {
     image: "/images/images1.png",
-    name: "Prof Deepak",
+    name: "Prof Anuj",
     duration: "8 hours",
   },
 
   {
     image: "/images/images1.png",
-    name: "Prof Deepak",
+    name: "Prof Tanya",
     duration: "8 hours",
   },
 ];
+
 const TeachersList = () => {
   return (
     <div className="teacher--list">
@@ -37,7 +38,10 @@ const TeachersList = () => {
           <div className="list">
             <div className="teacher--detail">
               <img src={teacher.image} alt={teacher.name} />
-              <h2>{teacher.name}</h2>
+              {/* <a href="/profile">{teacher.name}</a> */}
+              <Link to="/profile" activeClassName="current">
+                {teacher.name}
+              </Link>
             </div>
             <span>{teacher.duration}</span>
           </div>
